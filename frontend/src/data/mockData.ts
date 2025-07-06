@@ -1,0 +1,213 @@
+import { Product, Category } from '../types';
+
+export const categories: Category[] = [
+  { id: '1', name: 'Electronics', type: 'goods', icon: 'Smartphone', subcategories: ['Phones', 'Laptops', 'Gaming', 'Audio'] },
+  { id: '2', name: 'Fashion', type: 'goods', icon: 'Shirt', subcategories: ['Clothing', 'Shoes', 'Accessories', 'Jewelry'] },
+  { id: '3', name: 'Home & Garden', type: 'goods', icon: 'Home', subcategories: ['Furniture', 'Decor', 'Tools', 'Garden'] },
+  { id: '4', name: 'Vehicles', type: 'goods', icon: 'Car', subcategories: ['Cars', 'Motorcycles', 'Parts', 'Boats'] },
+  { id: '5', name: 'Services', type: 'services', icon: 'Briefcase', subcategories: ['Tutoring', 'Repair', 'Design', 'Consulting'] },
+  { id: '6', name: 'Sports', type: 'goods', icon: 'Dumbbell', subcategories: ['Equipment', 'Clothing', 'Outdoor', 'Fitness'] },
+  { id: '7', name: 'Books', type: 'goods', icon: 'Book', subcategories: ['Fiction', 'Non-fiction', 'Textbooks', 'Comics'] },
+  { id: '8', name: 'Real Estate', type: 'goods', icon: 'Building', subcategories: ['Rent', 'Sale', 'Commercial', 'Land'] }
+];
+
+export const mockProducts: Product[] = [
+  {
+    id: '1',
+    title: 'iPhone 15 Pro Max - Space Black',
+    description: 'Brand new iPhone 15 Pro Max 256GB in Space Black. Comes with original packaging, charger, and warranty. Never used, still sealed in box. Perfect for anyone looking for the latest Apple technology with advanced camera system and A17 Pro chip.',
+    price: 1199,
+    images: [
+      'https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg?auto=compress&cs=tinysrgb&w=500'
+    ],
+    category: 'Electronics',
+    subcategory: 'Phones',
+    condition: 'new',
+    sellerId: '1',
+    sellerName: 'John Doe',
+    sellerContact: '+1234567890',
+    sellerRating: 4.8,
+    isBoosted: true,
+    isActive: true,
+    views: 245,
+    likes: 32,
+    createdAt: '2024-01-15T10:00:00Z',
+    updatedAt: '2024-01-15T10:00:00Z',
+    location: 'New York, NY'
+  },
+  {
+    id: '2',
+    title: 'MacBook Pro 14" M3 Chip',
+    description: 'Professional laptop with M3 chip, 16GB RAM, 512GB SSD. Perfect for developers and creatives. Excellent condition, barely used. Includes original charger and box. Great for video editing, programming, and design work.',
+    price: 2399,
+    images: [
+      'https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=500'
+    ],
+    category: 'Electronics',
+    subcategory: 'Laptops',
+    condition: 'new',
+    sellerId: '1',
+    sellerName: 'John Doe',
+    sellerContact: '+1234567890',
+    sellerRating: 4.8,
+    isBoosted: false,
+    isActive: true,
+    views: 156,
+    likes: 28,
+    createdAt: '2024-01-14T14:30:00Z',
+    updatedAt: '2024-01-14T14:30:00Z',
+    location: 'San Francisco, CA'
+  },
+  {
+    id: '3',
+    title: 'Designer Leather Jacket',
+    description: 'Vintage-inspired genuine leather jacket. Size M, perfect condition. Great for casual or formal wear. High-quality Italian leather with premium stitching. Classic design that never goes out of style.',
+    price: 299,
+    images: [
+      'https://images.pexels.com/photos/1813947/pexels-photo-1813947.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/1036627/pexels-photo-1036627.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=500'
+    ],
+    category: 'Fashion',
+    subcategory: 'Clothing',
+    condition: 'used',
+    sellerId: '2',
+    sellerName: 'Sarah Wilson',
+    sellerContact: '+1234567891',
+    sellerRating: 4.9,
+    isBoosted: true,
+    isActive: true,
+    views: 89,
+    likes: 15,
+    createdAt: '2024-01-13T09:15:00Z',
+    updatedAt: '2024-01-13T09:15:00Z',
+    location: 'Los Angeles, CA'
+  },
+  {
+    id: '4',
+    title: 'Modern Dining Table Set',
+    description: 'Beautiful 6-seater dining table with chairs. Solid wood construction, excellent condition. Perfect for family dinners and entertaining guests. Includes matching chairs with comfortable cushions.',
+    price: 850,
+    images: [
+      'https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=500'
+    ],
+    category: 'Home & Garden',
+    subcategory: 'Furniture',
+    condition: 'used',
+    sellerId: '3',
+    sellerName: 'Mike Johnson',
+    sellerContact: '+1234567892',
+    sellerRating: 4.6,
+    isBoosted: false,
+    isActive: true,
+    views: 67,
+    likes: 12,
+    createdAt: '2024-01-12T16:45:00Z',
+    updatedAt: '2024-01-12T16:45:00Z',
+    location: 'Chicago, IL'
+  },
+  {
+    id: '5',
+    title: 'Web Development Services',
+    description: 'Professional web development services. React, Node.js, full-stack solutions. Portfolio available. Experienced developer with 5+ years in the industry. Custom websites, e-commerce, and web applications.',
+    price: 75,
+    images: [
+      'https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=500'
+    ],
+    category: 'Services',
+    subcategory: 'Design',
+    condition: 'new',
+    sellerId: '4',
+    sellerName: 'Alex Chen',
+    sellerContact: '+1234567893',
+    sellerRating: 5.0,
+    isBoosted: true,
+    isActive: true,
+    views: 134,
+    likes: 25,
+    createdAt: '2024-01-11T11:20:00Z',
+    updatedAt: '2024-01-11T11:20:00Z',
+    location: 'Austin, TX'
+  },
+  {
+    id: '6',
+    title: 'Mountain Bike - Trek 29er',
+    description: 'High-performance mountain bike, 29" wheels, 21-speed, excellent for trails and city riding. Well-maintained with recent tune-up. Perfect for outdoor adventures and daily commuting.',
+    price: 450,
+    images: [
+      'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg?auto=compress&cs=tinysrgb&w=500'
+    ],
+    category: 'Sports',
+    subcategory: 'Equipment',
+    condition: 'used',
+    sellerId: '5',
+    sellerName: 'Emma Davis',
+    sellerContact: '+1234567894',
+    sellerRating: 4.7,
+    isBoosted: false,
+    isActive: true,
+    views: 78,
+    likes: 18,
+    createdAt: '2024-01-10T13:30:00Z',
+    updatedAt: '2024-01-10T13:30:00Z',
+    location: 'Denver, CO'
+  },
+  {
+    id: '7',
+    title: 'Gaming Setup - Complete',
+    description: 'Complete gaming setup including RGB mechanical keyboard, gaming mouse, headset, and mousepad. Perfect for competitive gaming and streaming. All items in excellent condition.',
+    price: 320,
+    images: [
+      'https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=500'
+    ],
+    category: 'Electronics',
+    subcategory: 'Gaming',
+    condition: 'used',
+    sellerId: '6',
+    sellerName: 'Ryan Miller',
+    sellerContact: '+1234567895',
+    sellerRating: 4.5,
+    isBoosted: true,
+    isActive: true,
+    views: 92,
+    likes: 21,
+    createdAt: '2024-01-09T20:15:00Z',
+    updatedAt: '2024-01-09T20:15:00Z',
+    location: 'Seattle, WA'
+  },
+  {
+    id: '8',
+    title: 'Vintage Camera Collection',
+    description: 'Collection of vintage film cameras including Canon AE-1, Nikon FM, and Pentax K1000. All in working condition. Perfect for photography enthusiasts and collectors.',
+    price: 680,
+    images: [
+      'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=500',
+      'https://images.pexels.com/photos/821651/pexels-photo-821651.jpeg?auto=compress&cs=tinysrgb&w=500'
+    ],
+    category: 'Electronics',
+    subcategory: 'Audio',
+    condition: 'used',
+    sellerId: '7',
+    sellerName: 'Lisa Park',
+    sellerContact: '+1234567896',
+    sellerRating: 4.9,
+    isBoosted: false,
+    isActive: true,
+    views: 45,
+    likes: 8,
+    createdAt: '2024-01-08T15:45:00Z',
+    updatedAt: '2024-01-08T15:45:00Z',
+    location: 'Portland, OR'
+  }
+];

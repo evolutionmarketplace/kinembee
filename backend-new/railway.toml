@@ -1,0 +1,12 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn evolution_market.wsgi:application --bind 0.0.0.0:$PORT"
+healthcheckPath = "/health/"
+healthcheckTimeout = 100
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
+[env]
+NIXPACKS_PYTHON_VERSION = "3.11"
